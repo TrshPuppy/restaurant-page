@@ -1,1 +1,3 @@
-console.log("hey, u did the thing!");
+import loadHTML from "./loadpage";
+
+loadHTML();
