@@ -33,5 +33,5 @@ export default function loadHTML() {
   //   content.appendChild(headline);
   //   content.appendChild(catcher);
 
-  content.append(headline, catcher);
+  //   content.append(headline, catcher);
 }

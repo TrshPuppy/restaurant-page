@@ -7,12 +7,21 @@ loadHTML();
 
 // home tab
 //Event listener
-loadHome();
+const homeButton = document.querySelector(".home-button");
+homeButton.addEventListener("click", () => {
+  loadHome();
+});
 
 // menu tab
 //event listener
-loadMenu();
+const menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", () => {
+  loadMenu();
+});
 
 // hours/ location
 //event listener
-loadContact();
+const contactButton = document.querySelector(".contact-button");
+contactButton.addEventListener("click", () => {
+  loadContact();
+});
