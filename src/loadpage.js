@@ -1,6 +1,13 @@
+const HTMLbody = document.querySelector("body");
 const content = document.querySelector("#content");
 
 export default function loadHTML() {
+  const header = document.createElement("header");
+  const nav = document.createElement("nav");
+
+  HTMLbody.insertAdjacentElement("afterbegin", header);
+  header.append(nav);
+
   const headline = document.createElement("div");
   headline.classList.add("headline");
   headline.textContent = "Best Restoraunt!";
