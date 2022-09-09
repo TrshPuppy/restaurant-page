@@ -1,5 +1,8 @@
-import createTitleBox from "./utilities";
+import { createTitleBox } from "./utilities";
+
 const content = document.querySelector("#content");
+
+const menuTextContent = {};
 
 export default function loadMenu() {
   const titleBox = createTitleBox("Menu", "this is the menu bub");

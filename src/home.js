@@ -1,13 +1,46 @@
-import createTitleBox from "./utilities";
+import Element from "./utilities";
 
 const content = document.querySelector("#content");
 
 export default function loadHome() {
-  const titleBox = createTitleBox("Home", "This is the homepage");
+  const homeElement = new Element("div")
+    .addAttributes({ class: "home-tab" })
+    .addChild(new Element("h1").setInnerText("Hi there!"));
 
-  content.append(titleBox);
+  content.appendChild(homeElement.build());
+}
 
-  /* psuedo
+/* psuedo
+ const homeElement = new Element('div');
+ homeElement.attributes = {
+    class = 'whatever';
+    id = 'whateverid'
+ }
+ homeElement.children = 
+
+  function CreateAllElements(modelObject)
+  {
+    loop through object values
+    {
+        newElement = element.createElement('type');
+        newElement.classList.add('class');
+        newElement.innerText = ('innertext)
+
+
+        content.append(newElement);
+    }
+  }
+  homeModel = {
+    type: div,
+    class: 
+    innerText:
+    children:
+    
+  }
+
+
+
+
   on load home:
     create image
     title
@@ -27,4 +60,3 @@ export default function loadHome() {
         x4 smaple pics of food
     <review box>
     */
-}
