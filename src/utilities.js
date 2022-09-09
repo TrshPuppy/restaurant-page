@@ -5,3 +5,10 @@ export default function createTitleBox(title, text) {
 
   return myTitleElemtent;
 }
+
+export function clearContentBox() {
+  const contentBox = document.querySelector("#content");
+  console.log("hi");
+  contentBox.replaceChildren();
+  return;
+}

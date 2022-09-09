@@ -1,4 +1,4 @@
-import createTitleBox from "./functions";
+import createTitleBox from "./utilities";
 
 const content = document.querySelector("#content");
 
