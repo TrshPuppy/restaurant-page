@@ -16,11 +16,13 @@ homeButton.addEventListener("click", () => {
 // menu tab
 const menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", () => {
+  clearContentBox();
   loadMenu();
 });
 
 // contact tab
 const contactButton = document.querySelector(".contact-button");
 contactButton.addEventListener("click", () => {
+  clearContentBox();
   loadContact();
 });
