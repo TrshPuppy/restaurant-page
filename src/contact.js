@@ -1,5 +1,9 @@
+import createTitleBox from "./functions";
+
 const content = document.querySelector("#content");
 
 export default function loadContact() {
-  console.log("im contact");
+  const titleBox = createTitleBox("Contact", "This is the contact page");
+
+  content.append(titleBox);
 }

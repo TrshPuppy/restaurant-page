@@ -6,14 +6,6 @@ export default function loadHome() {
   const titleBox = createTitleBox("Home", "This is the homepage");
 
   content.append(titleBox);
-  // const titleBox = document.createElement('div');
-
-  // const
-  //   const homeImage = document.createElement("img");
-  //   homeImage.classList.add("home-image");
-  //   homeImage.src = "../src/tp-happy.png";
-
-  //   content.append(homeImage);
 
   /* psuedo
   on load home:
