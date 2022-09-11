@@ -1,11 +1,11 @@
-import Element from "./utilities";
+import Element from "./elementClass";
 
 const content = document.querySelector("#content");
 
 export default function loadHome() {
   const homeElement = new Element("div")
     .addAttributes({ class: "home-tab" })
-    .addChild(new Element("h1").setInnerText("Hi there!"));
+    .addChild(new Element("h1").setInnerText("Trash 2 Tummy"));
 
   content.appendChild(homeElement.build());
 }

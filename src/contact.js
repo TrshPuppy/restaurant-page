@@ -1,5 +1,3 @@
-import { createTitleBox } from "./utilities";
-
 const content = document.querySelector("#content");
 
 export default function loadContact() {

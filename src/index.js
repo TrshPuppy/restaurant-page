@@ -2,7 +2,7 @@ import loadHTML from "./loadpage";
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
-import { clearContentBox } from "./utilities";
+import clearContentBox from "./utilities";
 
 loadHTML();
 

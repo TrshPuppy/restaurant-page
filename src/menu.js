@@ -1,11 +1,11 @@
-import { createTitleBox } from "./utilities";
+import Element from "./elementClass";
 
 const content = document.querySelector("#content");
 
-const menuTextContent = {};
-
 export default function loadMenu() {
-  const titleBox = createTitleBox("Menu", "this is the menu bub");
+  const menuElement = new Element("div")
+    .addAttributes({ class: "menu-tab" })
+    .addChild(new Element("h1").setInnerText("Menu"));
 
-  content.append(titleBox);
+  content.appendChild(menuElement.build());
 }
