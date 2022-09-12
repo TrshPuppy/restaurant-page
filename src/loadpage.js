@@ -4,6 +4,7 @@ const content = document.querySelector("#content");
 export default function loadHTML() {
   const header = document.createElement("header");
   const nav = document.createElement("nav");
+  header.textContent = "Trash Cafe";
 
   const homeButton = document.createElement("button");
   homeButton.classList.add("home-button");
