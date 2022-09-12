@@ -3,6 +3,7 @@ import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
 import clearContentBox from "./utilities";
+import "./style.css";
 
 loadHTML();
 
