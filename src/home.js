@@ -6,7 +6,14 @@ export default function loadHome() {
   const homeElement = new Element("div")
     .addAttributes({ id: "tab", class: "home-tab" })
     .addChild(new Element("h1").setInnerText("Welcome to Trash Cafe!"))
-    .addChild(new Element("img").addAttributes({ class: "home-img" }));
+    .addChild(new Element("img").addAttributes({ class: "home-img" }))
+    .addChild(
+      new Element("p")
+        .addAttributes({ class: "blurb" })
+        .setInnerText(
+          "Do you love coffee? Do you also love feral cats? Then come visit us at Trash Cafe, where coffee and feral trash kittens make up the bulk of our aesthetic!"
+        )
+    );
 
   content.appendChild(homeElement.build());
 }

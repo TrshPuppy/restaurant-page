@@ -1,4 +1,18 @@
-/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono"); */
+@font-face {
+  font-family: "MyFont";
+  src: url("/src/fonts/logo-font-2.ttf") format("truetype");
+  style: normal;
+  weight: 400;
+  stretch: 100;
+}
+@font-face {
+  font-family: "My2ndFont";
+  src: url("/src/fonts/main-font.ttf") format("truetype");
+  style: normal;
+  weight: 400;
+  stretch: 100;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +22,8 @@ body {
   --accent-blue: #46b5c0;
   --accent-white: #e0cbac;
   --accent-brown: rgb(70, 39, 10);
-  --logo-font: "IBM Plex Mono", monospace;
+  --logo-font: "MyFont", monospace;
+  --main-font: "My2ndFont";
 }
 
 header {
@@ -17,12 +32,13 @@ header {
   align-items: center;
   justify-content: flex-end;
   width: 100vw;
-  height: 20vh;
+  height: 30vh;
   background-image: url("./img/header-img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0rem;
-  font-size: 5vw;
+  font-family: var(--logo-font);
+  font-size: clamp(50px, 6vw, 7vw);
   color: var(--accent-brown);
   font-weight: bolder;
   font-style: italic;
@@ -44,7 +60,7 @@ button {
   border: none;
   border-radius: 5px;
   background-color: var(--accent-blue);
-  font-size: clamp(15px, 1rem, 1.5rem);
+  font-size: clamp(15px, 1.5rem, 2rem);
   font-family: var(--logo-font);
 }
 
@@ -73,6 +89,7 @@ button:active {
   align-items: center;
   justify-content: center;
 }
+
 .home-img {
   display: flex;
   flex-flow: column nowrap;
@@ -81,6 +98,19 @@ button:active {
   width: 50vw;
   text-align: center;
   content: url(./img/home-img.jpg);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
+}
+
+h1 {
+  font-size: clamp(1rem, 4vw, 2rem);
+  padding: 10px;
+  font-family: var(--main-font);
+}
+
+.blurb {
+  width: 50vw;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding: 1vh 10vw;
 }
