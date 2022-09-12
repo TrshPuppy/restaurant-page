@@ -65,3 +65,22 @@ button:active {
   margin: 0 auto;
   background-color: lavender;
 }
+
+/* Styles for Dynamic elements */
+.home-tab {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.home-img {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  text-align: center;
+  content: url(./img/home-img.jpg);
+  padding: 20px;
+  border-radius: 10px;
+}

@@ -5,7 +5,8 @@ const content = document.querySelector("#content");
 export default function loadHome() {
   const homeElement = new Element("div")
     .addAttributes({ id: "tab", class: "home-tab" })
-    .addChild(new Element("h1").setInnerText("Trash 2 Tummy"));
+    .addChild(new Element("h1").setInnerText("Welcome to Trash Cafe!"))
+    .addChild(new Element("img").addAttributes({ class: "home-img" }));
 
   content.appendChild(homeElement.build());
 }
