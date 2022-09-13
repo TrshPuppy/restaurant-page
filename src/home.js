@@ -5,7 +5,7 @@ const content = document.querySelector("#content");
 export default function loadHome() {
   const homeElement = new Element("div")
     .addAttributes({ id: "tab", class: "home-tab" })
-    .addChild(new Element("h1").setInnerText("Welcome to Trash Cafe!"))
+    .addChild(new Element("h1").setInnerText("Welcome to Trash Cafe"))
     .addChild(new Element("img").addAttributes({ class: "home-img" }))
     .addChild(
       new Element("p")
@@ -13,6 +13,12 @@ export default function loadHome() {
         .setInnerText(
           "Do you love coffee? Do you also love feral cats? Then come visit us at Trash Cafe, where coffee and feral trash kittens make up the bulk of our aesthetic!"
         )
+    )
+    .addChild(new Element("h2").setInnerText("What is a cat-cafe?"))
+    .addChild(
+      new Element("p").setInnerText(
+        "We give back to the trash kitty community by giving local feral cats a place to lounge, eat, and relax."
+      )
     );
 
   content.appendChild(homeElement.build());

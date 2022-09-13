@@ -39,9 +39,10 @@ header {
   background-position: 0rem;
   font-family: var(--logo-font);
   font-size: clamp(50px, 6vw, 7vw);
-  color: var(--accent-brown);
+  color: var(--accent-blue);
   font-weight: bolder;
   font-style: italic;
+  text-shadow: 2px 5px var(--accent-brown);
 }
 
 nav {
@@ -75,11 +76,11 @@ button:active {
 #content {
   display: flex;
   flex-flow: column nowrap;
+  background-color: lavender;
 }
 
 #tab {
   margin: 0 auto;
-  background-color: lavender;
 }
 
 /* Styles for Dynamic elements */
@@ -95,7 +96,7 @@ button:active {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 60vw;
   text-align: center;
   content: url(./img/home-img.jpg);
   padding: 10px;
@@ -103,14 +104,14 @@ button:active {
 }
 
 h1 {
-  font-size: clamp(1rem, 4vw, 2rem);
-  padding: 10px;
-  font-family: var(--main-font);
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  padding: 20px;
+  font-family: var(--logo-font);
 }
 
-.blurb {
+p {
   width: 50vw;
   text-align: center;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  padding: 1vh 10vw;
+  padding: 20px 10vw;
 }
