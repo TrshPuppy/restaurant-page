@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npx webpack build",
-    "dev": "npx webpack watch",
-
+    "serve": "npx webpack serve",
+    "dev": "npm run serve",
+    "start": "npx webpack watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "css-loader": "^6.7.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
   }
 }
