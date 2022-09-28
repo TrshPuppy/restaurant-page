@@ -1,3 +1,4 @@
+/* Fonts: */
 @font-face {
   font-family: "logo-font";
   src: url("/src/fonts/logo-font-2.ttf") format("truetype");
@@ -19,6 +20,7 @@
 }
 
 body {
+  /* Variables: */
   --accent-blue: #46b5c0;
   --accent-white: #e0cbac;
   --accent-brown: rgb(70, 39, 10);
@@ -56,6 +58,32 @@ nav {
   font-family: var(--logo-font);
 }
 
+h1 {
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  padding: 20px;
+  font-family: var(--logo-font);
+  text-align: center;
+}
+
+#menu-title-h1 {
+  text-align: left;
+  font-family: var(--accent-font);
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+h2 {
+  font-family: var(--accent-font);
+  font-size: clamp(4rem, 5.5vw, 5rem);
+}
+
+p {
+  width: 50vw;
+  text-align: center;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: var(--main-font);
+  padding: 20px 10vw;
+}
+
 button {
   padding: clamp(5px, 1vw, 10vw);
   margin-bottom: 8px;
@@ -74,18 +102,11 @@ button:active {
   background-color: var(--accent-white);
 }
 
-#content {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: lavender;
-}
-
-#tab {
+/* ~~~~~~~~~~TABS~~~~~~~~~~ */
+.tab {
   margin: 0 auto;
 }
-
-/* Styles for Dynamic elements */
-.home-tab {
+#home-tab {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -99,26 +120,42 @@ button:active {
   justify-content: center;
   width: 40vw;
   text-align: center;
-  content: url(./img/home-img.jpg);
   padding: 10px;
   border-radius: 10px;
 }
-
-h1 {
-  font-size: clamp(1rem, 4vw, 2.5rem);
-  padding: 20px;
-  font-family: var(--logo-font);
+#home-img {
+  content: url(./img/home-img.jpg);
+}
+#menu-img {
+  content: url(./img/menu-img.jpg);
+  width: 30vw;
 }
 
-h2 {
-  font-family: var(--accent-font);
-  font-size: clamp(4rem, 5.5vw, 5rem);
+.container-div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
 }
 
-p {
-  width: 50vw;
-  text-align: center;
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  font-family: var(--main-font);
-  padding: 20px 10vw;
+.div-child {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 10px 30px;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: lavender;
+}
+
+#menu-container {
+}
+
+#menu-child {
+  display: flex;
 }

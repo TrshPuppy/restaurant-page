@@ -1,6 +1,6 @@
 import Element from "./elementClass";
 
-const content = document.querySelector("#content");
+const content = document.querySelector(".content");
 
 export default function loadContact() {
   const contactElement = new Element("div")

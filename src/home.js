@@ -1,10 +1,10 @@
 import Element from "./elementClass";
 
-const content = document.querySelector("#content");
+const content = document.querySelector(".content");
 
 export default function loadHome() {
   const homeElement = new Element("div")
-    .addAttributes({ id: "tab", class: "home-tab" })
+    .addAttributes({ id: "home-tab", class: "tab" })
     .addChild(new Element("h1").setInnerText("Welcome to Trash Cafe"))
     .addChild(
       new Element("img").addAttributes({ class: "tab-img", id: "home-img" })

@@ -1,23 +1,26 @@
 import Element from "./elementClass";
 
-const content = document.querySelector("#content");
+const content = document.querySelector(".content");
 
 export default function loadMenu() {
   const menuElement = new Element("div")
-    .addAttributes({ id: "tab", class: "menu-tab" })
+    .addAttributes({ id: "menu-tab", class: "tab" })
     .addChild(new Element("h1").setInnerText("Menu"))
     .addChild(
       new Element("div")
         .addAttributes({ class: "container-div", id: "menu-container" })
         .addChild(
-          new Element("img").addAttributes({ class: "tab-img", id: "menu-img" })
+          new Element("img").addAttributes({
+            class: "div-child",
+            id: "menu-img",
+          })
         )
         .addChild(
           new Element("div")
             .addAttributes({ class: "div-child", id: "menu-child" })
             .addChild(
               new Element("h1")
-                .addAttributes({ id: "menu-child-title" })
+                .addAttributes({ id: "menu-title-h1" })
                 .setInnerText("Our Daily Menu")
             )
             .addChild(
@@ -25,6 +28,10 @@ export default function loadMenu() {
                 .addAttributes({ id: "menu-list" })
                 .addChild(new Element("li").setInnerText("Espresso"))
                 .addChild(new Element("li").setInnerText("Americano"))
+                .addChild(new Element("li").setInnerText("Cold Brew"))
+                .addChild(new Element("li").setInnerText("Cappuccino"))
+                .addChild(new Element("li").setInnerText("Macchiato"))
+                .addChild(new Element("li").setInnerText("Latte"))
             )
         )
     );

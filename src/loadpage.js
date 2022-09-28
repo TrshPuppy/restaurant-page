@@ -1,5 +1,5 @@
 const HTMLbody = document.querySelector("body");
-const content = document.querySelector("#content");
+const content = document.querySelector(".content");
 
 export default function loadHTML() {
   const header = document.createElement("header");
