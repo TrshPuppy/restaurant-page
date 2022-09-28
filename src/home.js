@@ -6,7 +6,9 @@ export default function loadHome() {
   const homeElement = new Element("div")
     .addAttributes({ id: "tab", class: "home-tab" })
     .addChild(new Element("h1").setInnerText("Welcome to Trash Cafe"))
-    .addChild(new Element("img").addAttributes({ class: "home-img" }))
+    .addChild(
+      new Element("img").addAttributes({ class: "tab-img", id: "home-img" })
+    )
     .addChild(
       new Element("p")
         .addAttributes({ class: "blurb" })

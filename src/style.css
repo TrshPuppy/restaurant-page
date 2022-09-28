@@ -92,7 +92,7 @@ button:active {
   justify-content: center;
 }
 
-.home-img {
+.tab-img {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
