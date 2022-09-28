@@ -65,10 +65,23 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2,
+h3 {
   text-align: left;
   font-family: var(--accent-font);
   font-size: clamp(2rem, 5vw, 4rem);
+}
+#contact-h2 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+img {
+  border-radius: 10px;
 }
 
 p {
@@ -77,6 +90,12 @@ p {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-family: var(--main-font);
   padding: 20px 10vw;
+}
+#contact-about-p {
+  padding: 0;
+  text-align: left;
+  width: inherit;
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 ul {
@@ -140,16 +159,19 @@ button:active {
   content: url(./img/menu-img.jpg);
   width: clamp(300px, 100%, 30vw);
 }
+#contact-img {
+  content: url(./img/contact-img.png);
+}
 
 .container-div {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
-  width: 100vw;
   width: clamp(412px, 60vw, 60vw);
 }
-#menu-container {
+#contact-container {
+  justify-content: center;
 }
 
 .div-child {
@@ -160,4 +182,8 @@ button:active {
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
   box-sizing: border-box;
+}
+#contact-child {
+  width: 45%;
+  padding: 0 10px;
 }

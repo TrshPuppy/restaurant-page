@@ -58,20 +58,3 @@ export default function loadMenu() {
 
   content.appendChild(menuElement.build());
 }
-
-/* sudo HTML:
-div content
-  div menu tab
-    h1 menu
-    div container- flex box row-wrap
-      img: of food
-      div menu
-        h1 menu title
-        ul
-          li
-          li
-          li
-        ul
-
-
-*/
