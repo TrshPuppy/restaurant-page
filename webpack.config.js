@@ -14,6 +14,15 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.tff$/i,
+        use: [
+          {
+            loader: "url-loader",
+          },
+        ],
+      },
     ],
   },
+  watch: true,
 };
