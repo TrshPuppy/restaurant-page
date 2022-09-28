@@ -89,21 +89,3 @@ export default function loadContact() {
     );
   content.appendChild(contactElement.build());
 }
-
-/* 
-sudo HTML:
-
-container div
-  
-  div child
-    ul
-      li: our hours
-      li: our location
-      li: phone number:
-      li: website
-    ul
-.div child
-    h2 "our location"
-    p:flkald;kkfd;af"
-    img: map or somehting
-*/
