@@ -6,6 +6,7 @@ import clearContentBox from "./utilities";
 import "./style.css";
 
 loadHTML();
+loadHome();
 
 // home tab
 const homeButton = document.querySelector(".home-button");
