@@ -149,7 +149,7 @@ button:active {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  width: clamp(200px, 100%, 30vw);
+  width: clamp(150px, 100%, 30vw);
 }
 #home-img {
   content: url(./img/home-img.jpg);
@@ -157,7 +157,7 @@ button:active {
 }
 #menu-img {
   content: url(./img/menu-img.jpg);
-  width: clamp(300px, 100%, 30vw);
+  width: clamp(250px, 100%, 30vw);
 }
 #contact-img {
   content: url(./img/contact-img.png);
