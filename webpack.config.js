@@ -24,5 +24,15 @@ module.exports = {
       },
     ],
   },
+<<<<<<< HEAD
   watch: true,
+=======
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 9000,
+  },
+>>>>>>> 9f127eceeb37c68697e444c8d501aa1a0f2a42cd
 };
