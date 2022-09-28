@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "MyFont";
+  font-family: "logo-font";
   src: url("/src/fonts/logo-font-2.ttf") format("truetype");
   style: normal;
   weight: 400;
   stretch: 100;
 }
 @font-face {
-  font-family: "My2ndFont";
-  src: url("/src/fonts/main-font.ttf") format("truetype");
+  font-family: "accent-font";
+  src: url("/src/fonts/accent-font.ttf") format("truetype");
   style: normal;
   weight: 400;
   stretch: 100;
@@ -22,8 +22,9 @@ body {
   --accent-blue: #46b5c0;
   --accent-white: #e0cbac;
   --accent-brown: rgb(70, 39, 10);
-  --logo-font: "MyFont", monospace;
-  --main-font: "My2ndFont";
+  --logo-font: "logo-font", monospace;
+  --main-font: "Lucidia Sans", sans-serif;
+  --accent-font: "accent-font";
 }
 
 header {
@@ -32,7 +33,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   width: 100vw;
-  height: 30vh;
+  height: 25vh;
   background-image: url("./img/header-img.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -56,7 +57,7 @@ nav {
 }
 
 button {
-  padding: clamp(5px, 2vw, 10vw);
+  padding: clamp(5px, 1vw, 10vw);
   margin-bottom: 8px;
   border: none;
   border-radius: 5px;
@@ -96,7 +97,7 @@ button:active {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  width: 60vw;
+  width: 40vw;
   text-align: center;
   content: url(./img/home-img.jpg);
   padding: 10px;
@@ -109,9 +110,15 @@ h1 {
   font-family: var(--logo-font);
 }
 
+h2 {
+  font-family: var(--accent-font);
+  font-size: clamp(4rem, 5.5vw, 5rem);
+}
+
 p {
   width: 50vw;
   text-align: center;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: var(--main-font);
   padding: 20px 10vw;
 }
