@@ -2,7 +2,6 @@ import loadHTML from "./loadpage";
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
-import clearContentBox from "./utilities";
 import "./style.css";
 
 loadHTML();
@@ -28,3 +27,9 @@ contactButton.addEventListener("click", () => {
   clearContentBox();
   loadContact();
 });
+
+function clearContentBox() {
+  const contentBox = document.querySelector(".content");
+  contentBox.replaceChildren();
+  return;
+}

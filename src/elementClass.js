@@ -27,7 +27,6 @@ export default class Element {
   }
 
   build() {
-    // documnet.create(element);
     let DOMelement = document.createElement(this.elementType);
 
     // Attributes

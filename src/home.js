@@ -1,6 +1,6 @@
 import Element from "./elementClass";
 
-const content = document.querySelector(".content");
+const contentDiv = document.querySelector(".content");
 
 export default function loadHome() {
   const homeElement = new Element("div")
@@ -23,5 +23,5 @@ export default function loadHome() {
       )
     );
 
-  content.appendChild(homeElement.build());
+  contentDiv.appendChild(homeElement.build());
 }
