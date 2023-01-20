@@ -1,4 +1,5 @@
 package-lock.json
+dist/main.js
 
 # Logs
 logs
