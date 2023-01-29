@@ -1,9 +1,9 @@
 # Restaurant Page
 
-## Watch my video about my prcoess & lessons learned! https://www.youtube.com/watch?v=NiM4mG6MSzU
+## Watch my [video](https://www.youtube.com/watch?v=NiM4mG6MSzU) about my prcoess & lessons learned! 
 ---
 
-This is a dummy restaurant page made in order to learn JS modules and webpack. To see the original requirements, go here: https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page
+This is a dummy restaurant page made in order to learn JS modules and webpack. To see the original requirements, go [here](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
 ### Lessons Learned: ###
 #### JS/ npm/ webpack: ####
